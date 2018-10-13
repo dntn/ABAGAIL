@@ -1,3 +1,5 @@
+from __future__ import with_statement
+
 """
 Implementation of randomized hill climbing, simulated annealing, and genetic algorithm to
 find optimal weights to a neural network that is classifying abalone as having either fewer
@@ -16,8 +18,6 @@ from opt.example import NeuralNetworkOptimizationProblem
 import opt.RandomizedHillClimbing as RandomizedHillClimbing
 import opt.SimulatedAnnealing as SimulatedAnnealing
 import opt.ga.StandardGeneticAlgorithm as StandardGeneticAlgorithm
-
-from __future__ import with_statement
 
 INPUT_FILE = os.path.join("..", "src", "opt", "test", "abalone.txt")
 
